@@ -1,12 +1,24 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import Dropdown from "react-multilevel-dropdown";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import AssignmentIcon from '@mui/icons-material/Assignment';
+import BuildCircleIcon from '@mui/icons-material/BuildCircle';
 
 function DropdownComp() {
   return (
     <div className="flex gap-3">
-      <Dropdown title="Academics" className="text-black">
-        <Dropdown.Item>Item 1</Dropdown.Item>
+      <Dropdown title={
+        <span className="flex items-center">
+          Academics
+          <AssignmentIcon/>
+        </span>
+      } className="text-black">
+        <Dropdown.Item>Item 1
+        <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+          </Dropdown.Submenu>
+        </Dropdown.Item>
         <Dropdown.Item>
           Item 2
           <Dropdown.Submenu>
@@ -14,15 +26,168 @@ function DropdownComp() {
           </Dropdown.Submenu>
         </Dropdown.Item>
       </Dropdown>
-      <Dropdown title="Alumni" className="text-black">
-        <Dropdown.Item>Item 1</Dropdown.Item>
+      
+      <Dropdown title={
+  <span className="flex items-center">
+    Alumni
+    <ArrowDropDownIcon />
+  </span>
+} className="text-black">
+        
+        <Dropdown.Item>Item 1
+        <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 1
+            <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 2
+              
+
+            <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+            </Dropdown.Submenu>
+              
+
+              
+              
+
+            </Dropdown.Item>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+
+            </Dropdown.Submenu>
+
+            </Dropdown.Item>
+           
+
+            <Dropdown.Item>Subitem 1
+            <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 2
+              
+
+            <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+            </Dropdown.Submenu>
+              
+
+              
+              
+
+            </Dropdown.Item>
+            <Dropdown.Item>Subitem 1
+            <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 2
+              
+
+            <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+            </Dropdown.Submenu>
+              
+
+              
+              
+
+            </Dropdown.Item>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+
+            </Dropdown.Submenu>
+            </Dropdown.Item>
+
+            </Dropdown.Submenu>
+            </Dropdown.Item>
+            <Dropdown.Item>Subitem 1
+            <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 2
+              
+
+            <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+            </Dropdown.Submenu>
+              
+
+              
+              
+
+            </Dropdown.Item>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+
+            </Dropdown.Submenu>
+            </Dropdown.Item>
+            <Dropdown.Item>Subitem 1
+            <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 2
+              
+
+            <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+            </Dropdown.Submenu>
+              
+
+              
+              
+
+            </Dropdown.Item>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+
+            </Dropdown.Submenu>
+            </Dropdown.Item>
+          </Dropdown.Submenu>
+        </Dropdown.Item>
         <Dropdown.Item>
           Item 2
           <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 1
+            <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+
+            </Dropdown.Submenu>
+
+            </Dropdown.Item>
+           
+
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
             <Dropdown.Item>Subitem 1</Dropdown.Item>
           </Dropdown.Submenu>
         </Dropdown.Item>
+         
+        <Dropdown.Item>Item 1
+        <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 1
+            <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+
+            </Dropdown.Submenu>
+
+            </Dropdown.Item>
+           
+
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+          </Dropdown.Submenu>
+        </Dropdown.Item>
+        <Dropdown.Item>
+          Item 2
+          <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 1
+            <Dropdown.Submenu>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+
+            </Dropdown.Submenu>
+
+            </Dropdown.Item>
+           
+
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+            <Dropdown.Item>Subitem 1</Dropdown.Item>
+          </Dropdown.Submenu>
+        </Dropdown.Item>
+        
       </Dropdown>
+     
+      
       <Dropdown title="Campus Life" className="text-black">
         <Dropdown.Item>Item 1</Dropdown.Item>
         <Dropdown.Item>
@@ -32,7 +197,12 @@ function DropdownComp() {
           </Dropdown.Submenu>
         </Dropdown.Item>
       </Dropdown>
-      <Dropdown title="Careers" className="text-black">
+      <Dropdown title={
+        <span className="felx items-center">
+          Carrer
+         <BuildCircleIcon/>
+        </span>
+      } className="text-black">
         <Dropdown.Item>Item 1</Dropdown.Item>
         <Dropdown.Item>
           Item 2

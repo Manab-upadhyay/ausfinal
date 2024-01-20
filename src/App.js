@@ -5,13 +5,15 @@ import Navbar from "./components/navbar";
 import Heading from "./components/heading";
 import Footer from "./components/footer";
 import Login from "./components/login";
+import Admin from "./admin";
+import CustomForm from "./form";
 
 function Home() {
   return (
     <div>
       <Navbar />
       <Heading />
-      {/* Your main content for the home route */}
+   
       <Footer />
     </div>
   );
@@ -23,7 +25,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        {/* Add other routes if needed */}
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/form" element={<CustomForm />} />
+       
       </Routes>
     </Router>
   );

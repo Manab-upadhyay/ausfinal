@@ -7,6 +7,7 @@ import Footer from "./components/footer";
 import Login from "./components/login";
 import Admin from "./admin";
 import CustomForm from "./form";
+import SignIn from "./sigup";
 
 function Home() {
   return (
@@ -24,7 +25,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<SignIn />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/form" element={<CustomForm />} />
        
